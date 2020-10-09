@@ -1,5 +1,5 @@
 <template>
-    <div class="product">
+    <div class="product" @click="$router.push(`/products/${product.id}`)">
         <img :src="product.image" alt="">
         <p>{{product.title}}</p>
         <div>{{product.description}}</div>
@@ -14,7 +14,6 @@
         props:{
             product: Object
         }
-
     }
 </script>
 

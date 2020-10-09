@@ -5,6 +5,7 @@ import Account from '../views/Account'
 import About from '../views/About'
 import Contact from '../views/Contact'
 import Shop from '../views/Shop'
+import Product from '../views/ProductDetails'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,12 @@ const routes = [
     path: '/shop',
     name: 'Shop',
     component: Shop
+  },
+  {
+    path: '/products/:id',
+    name: 'product',
+    component: Product,
+    props: true
   }
 ]
 

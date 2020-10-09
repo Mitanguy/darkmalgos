@@ -9,11 +9,9 @@ export default {
             return axios.get(`https://fakestoreapi.com/products`).then(({data}) => data)
 
         },
-        // getProduct(id){
-        //
-        //     axios.get(`https://fakestoreapi.com/products${id}`).then(({data}) => {
-        //         this.products = data
-        //     })
-        // }
+        getProduct(id){
+        
+            return  axios.get(`https://fakestoreapi.com/products/${id}`).then(({data}) => data)
+        }
     }
 }
